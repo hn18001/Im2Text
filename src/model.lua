@@ -198,6 +198,8 @@ function model:step(inputBatch, isForwardOnly, beamSize)
   print(images[1])
   print("label:")
   print(targetInput[1])
+  print("imagepath:")
+  print(imagePaths[1])
   io.stdin:read(1)
 
   local batchSize = images:size(1)
