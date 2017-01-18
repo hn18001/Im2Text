@@ -157,6 +157,7 @@ end
 -- convert labelIndex to a list of token ids
 function labelIndexToTokenIds(labelIndex, labelPath)
   assert (idToVocab, 'idToVocab must be ready before calling labelIndexToTokenIds')
+  -- vocabToId and labellines are global var, they would be initialized once.
   if vocabToId == nil then
     vocabToId = tds.Hash()
     for i = 1, #idToVocab do
